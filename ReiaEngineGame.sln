@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistrugatorulDeBule", "DistrugatorulDeBule.vcxproj", "{B2FEA47A-884F-45DC-91EB-182BB03E1F66}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReiaEngine", "ReiaEngine\ReiaEngine.vcxitems", "{F13FCD86-1351-4F47-BDC5-6729E8CF0282}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ReiaEngine\ReiaEngine.vcxitems*{b2fea47a-884f-45dc-91eb-182bb03e1f66}*SharedItemsImports = 4
+		ReiaEngine\ReiaEngine.vcxitems*{f13fcd86-1351-4f47-bdc5-6729e8cf0282}*SharedItemsImports = 9
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug(OpenGL)|x64 = Debug(OpenGL)|x64
+		Debug(OpenGL)|x86 = Debug(OpenGL)|x86
+		Release(OpenGL)|x64 = Release(OpenGL)|x64
+		Release(OpenGL)|x86 = Release(OpenGL)|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x64.ActiveCfg = Debug(OpenGL)|x64
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x64.Build.0 = Debug(OpenGL)|x64
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.ActiveCfg = Release(OpenGL)|Win32
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.Build.0 = Release(OpenGL)|Win32
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x64.ActiveCfg = Release(OpenGL)|x64
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x64.Build.0 = Release(OpenGL)|x64
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x86.ActiveCfg = Release(OpenGL)|Win32
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x86.Build.0 = Release(OpenGL)|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF351BA6-C0B4-4B92-B3A4-714451D04C2F}
+	EndGlobalSection
+EndGlobal
