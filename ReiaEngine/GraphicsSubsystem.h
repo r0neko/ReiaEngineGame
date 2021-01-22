@@ -12,26 +12,33 @@ class GraphicsSubsystem
 public:
 	GraphicsSubsystem() : ScreenResolution(800, 600) {}
 
-	void Update();
+	void Update() {}
+
 	int Init(int argc, char** argv) {
 		ERROR_LOG("GraphicsSubsystem's Init called!");
 		return -1;
 	};
 
-	void SetScreenResolution(VectorI2 NewResolution, bool FullScreen = false) {
+	void Start() {}
+
+	void JoinThread() {}
+
+	void SetScreenResolution(VectorI2 NewResolution, bool FullScreen = false, bool WindowedMode = true) {
 		ScreenResolution = NewResolution;
 		isFullScreen = FullScreen;
+		isWindowed = WindowedMode;
 	};
 
 	bool IsFullScreen() {
 		return isFullScreen;
 	}
 
-	void SetWindowTitle(char* NewTitle);
+	void SetWindowTitle(char* NewTitle) {}
 
-private:
+protected:
 	VectorI2 ScreenResolution;
 	bool isFullScreen = false;
+	bool isWindowed = false;
 };
 
 #ifdef GS_OPENGL

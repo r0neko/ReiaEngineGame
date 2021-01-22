@@ -10,11 +10,23 @@ class Game
 {
 public:
 	int Start(int argc, char** argv);
+
+	void SetWindowTitle(char* title) {
+		gfxITX->SetWindowTitle(title);
+	}
+
+	void SetScreenResolution(VectorI2 NewResolution, bool FullScreen = false, bool WindowedMode = true) {
+		gfxITX->SetScreenResolution(NewResolution, FullScreen, WindowedMode);
+	}
+
+	void JoinGFXThread() {
+		gfxITX->JoinThread();
+	}
 private:
 #ifdef GS_OPENGL
-	GLSubsystem* gfx_ss_itx = nullptr;
+	GLSubsystem* gfxITX = nullptr;
 #else
-	GraphicsSubsystem* gfx_ss_itx = nullptr;
+	GraphicsSubsystem* gfxITX = nullptr;
 #endif
 };
 

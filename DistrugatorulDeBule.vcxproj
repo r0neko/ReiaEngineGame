@@ -24,7 +24,7 @@
     <ProjectGuid>{b2fea47a-884f-45dc-91eb-182bb03e1f66}</ProjectGuid>
     <RootNamespace>ReiaEngine</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DistrugatorulDeBule</ProjectName>
+    <ProjectName>BubbleDestroyer</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug(OpenGL)|Win32'" Label="Configuration">

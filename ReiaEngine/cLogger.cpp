@@ -37,5 +37,5 @@ void cLogger::Log(LoggingMessageType logType, string file, string functionName, 
 	vsnprintf(buffer, 255, format.c_str(), argptr);
 	va_end(argptr);
 
-	printf("\x1B[%im\x1B[%im%s\x1B[0m (%s - %s:%i): %s\n", bgColor, fgColor, type, file.c_str(), functionName.c_str(), line, buffer);
+	printf("\x1B[%im\x1B[%im%s\x1B[0m (%s - %s:%i): %s", bgColor, fgColor, type, file.c_str(), functionName.c_str(), line, buffer);
 }
