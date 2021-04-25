@@ -23,6 +23,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)GraphicsSubsystem.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)cLogger.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Scene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Text.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UI.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Vector2.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)VectorI2.h" />
   </ItemGroup>
@@ -30,7 +33,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Game.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)GameComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)cLogger.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGL\glad\glad.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)ReiaEngine.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Scene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Text.cpp" />
   </ItemGroup>
 </Project>

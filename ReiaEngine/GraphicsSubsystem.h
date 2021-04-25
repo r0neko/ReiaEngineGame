@@ -14,16 +14,16 @@ public:
 
 	void Update() {}
 
-	int Init(int argc, char** argv) {
-		ERROR_LOG("GraphicsSubsystem's Init called!");
+	virtual int Init(int argc, char** argv) {
+		ERROR_LOG("GraphicsSubsystem::Init called! You are supposed to add your code here!\n");
 		return -1;
 	};
 
-	void Start() {}
+	virtual void Start() {}
 
-	void JoinThread() {}
+	virtual void Stop() {}
 
-	void SetScreenResolution(VectorI2 NewResolution, bool FullScreen = false, bool WindowedMode = true) {
+	virtual void SetScreenResolution(VectorI2 NewResolution, bool FullScreen = false, bool WindowedMode = true) {
 		ScreenResolution = NewResolution;
 		isFullScreen = FullScreen;
 		isWindowed = WindowedMode;
@@ -33,7 +33,15 @@ public:
 		return isFullScreen;
 	}
 
-	void SetWindowTitle(char* NewTitle) {}
+	virtual void SetWindowTitle(char* NewTitle) {}
+
+	virtual void ProcessFrame() {
+
+	}
+
+	virtual bool Available() {
+		return false;
+	}
 
 protected:
 	VectorI2 ScreenResolution;

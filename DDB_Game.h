@@ -4,6 +4,7 @@
 class DDB_Game: public Game
 {
 public:
-    int Start(int argc, char** argv);
+    virtual int Start(int argc, char** argv);
 };
 
+extern DDB_Game GameInstance;

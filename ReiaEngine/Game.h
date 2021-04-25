@@ -9,7 +9,12 @@
 class Game
 {
 public:
-	int Start(int argc, char** argv);
+	GraphicsSubsystem* gfxITX = nullptr;
+
+	int Run(int argc, char** argv);
+
+	virtual int Start(int argc, char** argv);
+	void Stop();
 
 	void SetWindowTitle(char* title) {
 		gfxITX->SetWindowTitle(title);
@@ -19,15 +24,11 @@ public:
 		gfxITX->SetScreenResolution(NewResolution, FullScreen, WindowedMode);
 	}
 
-	void JoinGFXThread() {
-		gfxITX->JoinThread();
+	void StartGameLoop() {
+		while (gfxITX->Available()) {
+			gfxITX->ProcessFrame();
+		}
 	}
-private:
-#ifdef GS_OPENGL
-	GLSubsystem* gfxITX = nullptr;
-#else
-	GraphicsSubsystem* gfxITX = nullptr;
-#endif
 };
 
 #endif

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistrugatorulDeBule", "DistrugatorulDeBule.vcxproj", "{B2FEA47A-884F-45DC-91EB-182BB03E1F66}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BubbleDestroyer", "DistrugatorulDeBule.vcxproj", "{B2FEA47A-884F-45DC-91EB-182BB03E1F66}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReiaEngine", "ReiaEngine\ReiaEngine.vcxitems", "{F13FCD86-1351-4F47-BDC5-6729E8CF0282}"
 EndProject
@@ -21,8 +21,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x64.ActiveCfg = Debug(OpenGL)|x64
 		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x64.Build.0 = Debug(OpenGL)|x64
-		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.ActiveCfg = Release(OpenGL)|Win32
-		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.Build.0 = Release(OpenGL)|Win32
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.ActiveCfg = Debug(OpenGL)|Win32
+		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Debug(OpenGL)|x86.Build.0 = Debug(OpenGL)|Win32
 		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x64.ActiveCfg = Release(OpenGL)|x64
 		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x64.Build.0 = Release(OpenGL)|x64
 		{B2FEA47A-884F-45DC-91EB-182BB03E1F66}.Release(OpenGL)|x86.ActiveCfg = Release(OpenGL)|Win32

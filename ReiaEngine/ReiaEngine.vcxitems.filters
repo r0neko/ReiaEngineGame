@@ -16,6 +16,12 @@
     <Filter Include="GraphicSubsystem">
       <UniqueIdentifier>{05348122-b24d-4f67-a0d6-556bd2888f6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{04c41b59-6b7d-4463-b535-087762668b4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Text">
+      <UniqueIdentifier>{e7cd4992-66eb-43f0-a4bb-2853cf0494f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GameComponent.cpp">
@@ -28,6 +34,12 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)ReiaEngine.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)cLogger.cpp">
       <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)OpenGL\glad\glad.c">
+      <Filter>GraphicSubsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Text.cpp">
+      <Filter>UI\Text</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +64,15 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)GraphicsSubsystem.h">
       <Filter>GraphicSubsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)SceneRenderer.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Text.h">
+      <Filter>UI\Text</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
